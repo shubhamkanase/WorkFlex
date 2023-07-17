@@ -1,3 +1,45 @@
-.navbar{
+.navbar {
     color: blue;
+    display: flex;
+    justify-content: center;
+    border: 2px solid  rgb(29, 28, 28);
+    height: 80px;
+    width: 1362px;
+
+}
+
+.container {
+    display: flex;
+    width: 1400px;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: rgb(27, 27, 27);
+}
+
+.logo {
+    height: 250px;
+    width: 250px;
+    margin-top: -45px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    gap: 24px;
+    margin-right: 100px;
+    font-weight: 400px;
+    cursor: pointer;
+}
+
+button{
+    padding: 5px 10px;
+    font-weight: 500px;
+    font-size: 15px;
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(23, 228, 23);
+    cursor: pointer;
 }
