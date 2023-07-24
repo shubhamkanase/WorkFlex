@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
-  const [open,setOpen] = useState(false);
+  const [open,setOpen] = useState(true);
   
   const currentUser = {
     id: 1,
@@ -16,9 +16,9 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="container">
         <div className="logo">
-          {/* <Link> */}
+          <Link>
           <img className="logo" src="./img/WorkFlexlogo.png" alt="" />
-          {/* </Link> */}
+          </Link>
         </div>
         <div className="link">
           <spna>WorkFlex Bussiness</spna>
@@ -28,20 +28,20 @@ const Navbar = () => {
           {!currentUser?.isSeller && <spna>Become a Seller</spna>}
           {!currentUser && <button>Join</button>}
           {currentUser && (
-            <div className="user" onClick={ ()=>setOpen(!open)}>
+            <div className="user" onClick={()=>setOpen(!open)}>
               <img src="./img/Photograph.jpg" alt="" />
               <span>{currentUser?.username}</span>
               {!open && <div className="options">
                {
                 currentUser?.isSeller && (
                   <>
-                  <span>Gigs</span>
-                  <span>Add New Gig</span>
+                   <Link to="/mygigs">Gigs</Link>
+                   <Link to="/add">Add New Gig</Link>
                   </>
                 )}
-                <span>Orders</span>
-                <span>Messages</span>
-                <span>Logout</span>
+                 <Link to="/orders">Orders</Link>
+                 <Link to="/messages">Messages</Link>
+                 <Link to="/">Logout</Link>
             </div>}
           </div>
          )}
