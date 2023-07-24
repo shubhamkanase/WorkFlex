@@ -1,10 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Navbar.scss"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
-
+  const [active,setActive] = useState(false);
   const [open,setOpen] = useState(true);
+
+  const {pathname} = useLocation()
+
+  const isActive = () =>{
+    Window.srollY > 0 ? setActive(true): setActive(false)
+  };
+
+  useEffect (() => {
+    window.addEventListener('scroll', isActive);
+    return()=>{
+      window.removeEventListener('scroll',isActive)
+    }
+  },[]);
+
+
+  
   
   const currentUser = {
     id: 1,
@@ -48,6 +64,15 @@ const Navbar = () => {
       </div>
 
     </div>
+     {(active || pathname !== "/") && (
+      <>
+      <hr/>
+      <div className="menu">
+        <span>test</span>
+        <span>test2</span>
+      </div>
+      </>
+     )}
     </div >
   )
 }
