@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Featured.scss"
+import { Home, SearchOutlined, SearchSharp } from '@mui/icons-material'
 
 const Featured = () => {
   return (
@@ -10,7 +11,7 @@ const Featured = () => {
                 <h1>Find the perfect Freelancing service for your Bussiness</h1>
                 <div className="search">
                     <div className="searchInput">
-                        <img src="./img/searchicon.png" alt="" />
+                        <SearchSharp fontSize="large" className='SearchSharp'/>
                         <input type="text" placeholder='try your bussiness ' />
 
                     </div>
@@ -27,9 +28,9 @@ const Featured = () => {
             </div>
             <div />
             <div className="right">
-                <img className='homePic' src="./img/homeimg1.png" alt="" />
                 <img className='homepic2'src="./img/homeimg2.svg" alt="" />
-
+                <Home color="primary"/>
+                <SearchOutlined color="primary" />
             </div>
 
         </div>
