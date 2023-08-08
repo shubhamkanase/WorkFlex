@@ -32,12 +32,16 @@
 
 .link {
     display: flex;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     align-items: center;
     gap: 24px;
     margin-right: 100px;
     font-weight: 400px;
     cursor: pointer;
+}
+
+.link:hover{
+    color: rgb(248, 6, 66);
 }
 
 button{

@@ -4,9 +4,8 @@ import { Home, SearchOutlined, SearchSharp } from '@mui/icons-material'
 
 const Featured = () => {
   return (
-    <div className='Featured'>
+    <div className='featured'>
         <div className="Container">
-            <div />
             <div className="left">
                 <h1>Find the perfect Freelancing service for your Bussiness</h1>
                 <div className="search">

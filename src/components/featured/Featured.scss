@@ -1,8 +1,15 @@
+.featured{
+    display: flex;
+    color: rgb(30, 255, 97);
+
 .Container{
     color: rgb(0, 0, 0);
-    background-color: #d7e6fd;
-    height: 400px;
-   
+    background: url("./img/backgroundimg.png") no-repeat center center/cover;
+    height: 750px;
+    display: flex;
+    // align-items: center;
+    
+
     button{
         padding: 5px 10px;
     font-weight: 500px;
@@ -12,12 +19,12 @@
     background-color: rgb(85, 23, 228);
     cursor: pointer;
 }
-
-.homePic{
-  height: 500px;
-  width: 500px;
+.left{
+    margin: 100px 100px;
+    color: rgb(200, 255, 0);
 }
 
+}
 }
 .homepic2{
     height: 500px;
@@ -25,6 +32,5 @@
 }
 
 .SearchSharp{
-    color: rgb(0, 238, 255);
-    fontSize: large;
+    color: rgb(0, 0, 0);
 }

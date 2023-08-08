@@ -41,6 +41,7 @@ const Navbar = () => {
           <spna>Explore</spna>
           <spna>English</spna>
           <spna>Sign in</spna>
+      
           {!currentUser?.isSeller && <spna>Become a Seller</spna>}
           {!currentUser && <button>Join</button>}
           {currentUser && (
