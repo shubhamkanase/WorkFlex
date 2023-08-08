@@ -37,10 +37,10 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="link">
-          <spna>WorkFlex Bussiness</spna>
-          <spna>Explore</spna>
-          <spna>English</spna>
-          <spna>Sign in</spna>
+          <span>WorkFlex Bussiness</span>
+          <span>Explore</span>
+          <span>English</span>
+          <span>Sign in</span>
       
           {!currentUser?.isSeller && <spna>Become a Seller</spna>}
           {!currentUser && <button>Join</button>}

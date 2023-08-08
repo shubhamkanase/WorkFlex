@@ -3,9 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    //align-items: center;
-    // border: 2px solid  rgb(29, 28, 28);
-    // height: 500px;
     max-width: 100%;
     position: sticky;
     top: 0px;
@@ -38,21 +35,24 @@
     margin-right: 100px;
     font-weight: 400px;
     cursor: pointer;
+
+    button{
+        padding: 5px 10px;
+        font-weight: 500px;
+        font-size:15px;
+        border-radius: 8px;
+        color: black;
+        background-color: rgb(23, 228, 23);
+        cursor: pointer;
+    }
 }
 
-.link:hover{
-    color: rgb(248, 6, 66);
+span:hover{
+    color: rgb(22, 255, 53);
+
 }
 
-button{
-    padding: 5px 10px;
-    font-weight: 500px;
-    font-size:15px;
-    border-radius: 8px;
-    color: black;
-    background-color: rgb(23, 228, 23);
-    cursor: pointer;
-}
+
 
 button:hover{
     background-color: rgb(80, 255, 138);
@@ -99,17 +99,6 @@ button:hover{
     padding :5px 90px 5px 90px;
 }
 
-// .menu{
-//     // color: rgb(255, 255, 255);
-//     background-color: rgb(21, 255, 71);
-//     max-width: 100%;
-//     padding: 10px 10px 10px 30px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     border: 2px solid blue;
-//     font-weight: 500;
-// }
 
 .links{
     color:rgb(0, 0, 0);
