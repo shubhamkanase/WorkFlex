@@ -1,0 +1,45 @@
+.trustedBy {
+    height: 100px;
+    // background-color: aliceblue;
+    margin-top: -175px;
+    
+
+    .trustspan{
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-bottom: 20px;
+        
+    
+
+    }
+    .trustContainer {
+        // width: 1200px;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        gap: 15px;
+        color: rgb(0, 0, 0);
+
+
+        img {
+            height: 60px;
+            object-fit: contain;
+            // margin-left: 10px;
+
+        }
+        .googleicon{
+            height: 200px;
+            width: 200px;
+            margin-top: -75px;
+            // margin-left: 10px;
+        }
+        .netflixicon{
+            height: 130px;
+            width: 130px;
+            margin-top: -35px;
+        }
+
+    }
+}

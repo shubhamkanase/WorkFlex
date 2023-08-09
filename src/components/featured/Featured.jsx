@@ -7,10 +7,10 @@ const Featured = () => {
     <div className='featured'>
         <div className="Container">
             <div className="left">
-                <h1>Find the perfect Freelancing service for your Bussiness</h1>
+                <h1>Find The Perfect <i>Freelancing</i> Service For Your Bussiness</h1>
                 <div className="search">
                     <div className="searchInput">
-                        <SearchSharp fontSize="large" className='SearchSharp'/>
+                        <SearchSharp fontSize='medium' className='SearchSharp'/>
                         <input type="text" placeholder='try your bussiness ' />
 
                     </div>
@@ -27,9 +27,10 @@ const Featured = () => {
             </div>
             <div />
             <div className="right">
-                <img className='homepic2'src="./img/homeimg2.svg" alt="" />
-                <Home color="primary"/>
-                <SearchOutlined color="primary" />
+                {/* <img className='homepic2'src="./img/homeimg2.svg" alt="" /> */}
+                <img className='homepic2' src="./img/homeimg3.svg" alt="" />
+                {/* <Home color="primary"/> */}
+                {/* <SearchOutlined color="primary" /> */}
             </div>
 
         </div>

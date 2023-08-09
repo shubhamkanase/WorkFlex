@@ -36,6 +36,11 @@
     font-weight: 400px;
     cursor: pointer;
 
+    span:hover{
+        color: rgb(22, 255, 53);
+    
+    }
+
     button{
         padding: 5px 10px;
         font-weight: 500px;
@@ -45,18 +50,22 @@
         background-color: rgb(23, 228, 23);
         cursor: pointer;
     }
-}
-
-span:hover{
-    color: rgb(22, 255, 53);
-
-}
-
-
-
+    
 button:hover{
     background-color: rgb(80, 255, 138);
 }
+}
+
+// span:hover{
+//     color: rgb(22, 255, 53);
+
+// }
+
+
+
+// button:hover{
+//     background-color: rgb(80, 255, 138);
+// }
 
 .user{
     display: flex;

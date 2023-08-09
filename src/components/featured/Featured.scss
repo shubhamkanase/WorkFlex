@@ -1,11 +1,12 @@
 .featured {
     display: flex;
-    color: rgb(30, 255, 97);
+    color: rgb(255, 30, 30);
 
     .Container {
         color: rgb(0, 0, 0);
         background: url("./img/backgroundimg.png") no-repeat center center/cover;
         height: 750px;
+        width: 100%;
         display: flex;
 
 
@@ -20,14 +21,20 @@
 
         .left {
             margin: 70px 70px;
-            color: rgb(200, 255, 0);
+            color: rgb(238, 255, 0);
             display: flex;
             flex-direction: column;
             gap: 20px;
 
             h1 {
-                font-size: 60px;
+                font-weight: 500;
                 color: rgb(255, 255, 255);
+                font-family: Times, "Times New Roman", Georgia, serif;
+                font-size: 55px;
+
+                i{
+                    color:rgb(121, 236, 6);
+                }
             }
 
             .search {
@@ -39,7 +46,7 @@
                 width: 400px;
                 height: 30px;
 
-                .SearchSharp{
+                .SearchSharp {
                     color: black;
                 }
 
@@ -87,9 +94,17 @@
         }
 
         .right {
+
+            height: 100%;
+
             .homepic2 {
-                height: 500px;
-                width: 500px;
+                height: 600px;
+                width: 600px;
+                margin: -80px 30px;
+                padding: 0px 0px;
+            
+            
+        
             }
 
             .SearchSharp {
