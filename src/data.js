@@ -1,0 +1,60 @@
+export const cards = [
+    {
+      id: 1,
+      title: "AI Artists",
+      desc: "Add talent to AI",
+      img:"https://img.freepik.com/free-photo/man-wearing-vr-headset-pointing-cyber-security-hologram_53876-97884.jpg?w=740&t=st=1691677562~exp=1691678162~hmac=eceeb9d8af4acae8c07de5ebea89357b136d0bd468badb0414154b9e83f3fc12",
+      // img: "https://images.pexels.com/photos/7532110/pexels-photo-7532110.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    },
+    {
+      id: 2,
+      title: "Logo Design",
+      desc: "Build yor brand",
+      img:"https://img.freepik.com/free-photo/medium-shot-woman-wearing-vr-glasses_23-2150394437.jpg?w=360&t=st=1691677753~exp=1691678353~hmac=72e5a8cca05affefb3fa8ed5a8bd76943529f3993918b7b133143911629dd0eb",
+      // img:"https://img.freepik.com/free-photo/blank-logo-stamp-tag-template_53876-21277.jpg?w=740&t=st=1691677502~exp=1691678102~hmac=62a47c1d8a3da4891ed00ae1246662c1c936137dac397df976e166cdc6596f32",
+      // img: "https://images.pexels.com/photos/11295165/pexels-photo-11295165.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    },
+    {
+      id: 3,
+      title: "WordPress",
+      desc: "Build your site",
+      img:"https://img.freepik.com/free-photo/woman-working-laptop_53876-163217.jpg?w=740&t=st=1691677433~exp=1691678033~hmac=f26b3e1f489855dbec31fb30cd780b412f30c37f13a5991f08f9c681d97b0461",
+      // img: "https://images.pexels.com/photos/4371669/pexels-photo-4371669.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    },
+    {
+      id: 4,
+      title: "Voice Over",
+      desc: "Share your message",
+      // img: "https://images.pexels.com/photos/7608079/pexels-photo-7608079.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      img:"https://img.freepik.com/free-photo/black-notepad-microphone-with-red-wire_23-2148695282.jpg?w=740&t=st=1691676092~exp=1691676692~hmac=0c7ef93f434aa34b23e38f36d994c46bb66239ce695da7a0070736001c01db8a",
+    },
+    {
+      id: 5,
+      title: "Video Creater",
+      desc: "Engage audience",
+      img:"https://img.freepik.com/free-photo/video-maker-editor-working-digital-montage-creating-graphic-effects-computer-using-post-production-software-creativity-studio-agency-creator-editing-movie-footage-remote-work_482257-37969.jpg?w=740&t=st=1691677244~exp=1691677844~hmac=23292f11aef84a6b076c2fa7611b7aaf013df4d953f3a7ebffa75c95372d4438",
+      // img: "https://images.pexels.com/photos/13388047/pexels-photo-13388047.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    },
+    {
+      id: 6,
+      title: "Social Media",
+      desc: "Reach customers",
+      img: "https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063136.jpg?w=740&t=st=1691676307~exp=1691676907~hmac=641fec6beb42c5f5b1ac83169c73fed1404aeb10bf871b791ac9bea087e0f8c1",
+      // img: "https://images.pexels.com/photos/11378899/pexels-photo-11378899.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    },
+    {
+      id: 7,
+      title: "SEO",
+      desc: "Unlock growth",
+      img:"https://img.freepik.com/free-photo/business-people-meeting_53876-15178.jpg?w=740&t=st=1691676362~exp=1691676962~hmac=560fefbd0ae581e741f9f826a7cc13f3dc52f7812e6f44194f1277c9e708149a",
+      // img: "https://images.pexels.com/photos/4820241/pexels-photo-4820241.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    },
+    {
+      id: 8,
+      title: "Illustration",
+      desc: "Color dreams",
+      img: "https://img.freepik.com/free-photo/abstract-design-with-colorful-patterns-nature-leaf-generated-by-ai_188544-15573.jpg?w=826&t=st=1691676628~exp=1691677228~hmac=e5a135c304986dadad287650ac3dd0cd3d99d6c64f2b9174d30959ca347c91ca",
+      // img: "https://images.pexels.com/photos/15032623/pexels-photo-15032623.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    },
+  ];
+  

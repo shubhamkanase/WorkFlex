@@ -1,6 +1,5 @@
 .featured {
     display: flex;
-    color: rgb(255, 30, 30);
 
     .Container {
         color: rgb(0, 0, 0);
@@ -32,8 +31,8 @@
                 font-family: Times, "Times New Roman", Georgia, serif;
                 font-size: 55px;
 
-                i{
-                    color:rgb(121, 236, 6);
+                i {
+                    color: rgb(121, 236, 6);
                 }
             }
 
@@ -65,7 +64,9 @@
                 align-items: center;
                 gap: 5px;
 
-                span {}
+                span {
+                    color: rgb(206, 255, 31);
+                }
 
                 button {
                     color: white;
@@ -100,11 +101,9 @@
             .homepic2 {
                 height: 600px;
                 width: 600px;
-                margin: -80px 30px;
+                margin: -50px 40px;
                 padding: 0px 0px;
-            
-            
-        
+
             }
 
             .SearchSharp {
