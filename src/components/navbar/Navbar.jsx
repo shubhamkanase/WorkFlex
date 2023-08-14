@@ -41,7 +41,7 @@ const Navbar = () => {
           <span>Explore</span>
           <span>English</span>
           <span>Sign in</span>
-      
+
           {!currentUser?.isSeller && <spna>Become a Seller</spna>}
           {!currentUser && <button>Join</button>}
           {currentUser && (
@@ -69,37 +69,36 @@ const Navbar = () => {
         <>
           <hr />
           <div className='menuItems'>
-          <div className="menu">
-            <Link className='links' to="/">
-              Graphic & Design
-            </Link>
-            <Link className='links' to="/">
-              Video & Animation
-            </Link>
-            <Link className='links' to="/">
-              Writing & Translation
-            </Link>
-            <Link className='links' to="/">
-              AI Services
-            </Link>
-            <Link className='links' to="/">
-              Digital & Marketing
-            </Link>
-            <Link className='links' to="/">
-              Music & Audio
-            </Link>
-            <Link className='links' to="/">
-              Programming & Tech
-            </Link>
-            <Link className='links' to="/">
-              Business
-            </Link>
-            <Link className='links' to="/">
-              Lifestyle
-            </Link>
+            <div className="menu">
+              <Link className='links' to="/">
+                Graphic & Design
+              </Link>
+              <Link className='links' to="/">
+                Video & Animation
+              </Link>
+              <Link className='links' to="/">
+                Writing & Translation
+              </Link>
+              <Link className='links' to="/">
+                AI Services
+              </Link>
+              <Link className='links' to="/">
+                Digital & Marketing
+              </Link>
+              <Link className='links' to="/">
+                Music & Audio
+              </Link>
+              <Link className='links' to="/">
+                Programming & Tech
+              </Link>
+              <Link className='links' to="/">
+                Business
+              </Link>
+              <Link className='links' to="/">
+                Lifestyle
+              </Link>
+            </div>
           </div>
-          </div>
-          
         </>
       )}
     </div >
