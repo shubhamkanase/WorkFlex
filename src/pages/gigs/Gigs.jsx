@@ -1,9 +1,58 @@
 import React from 'react'
 import "./Gigs.scss"
+import { KeyboardArrowDown, Sort } from '@mui/icons-material';  
+import { useState } from 'react';
+import {gigs} from "../../data";
+import GigCard from '../../components/gigCard/GigCard';
 
-const Gigs= () => {
+const Gigs = () => {
+
+  const [sort, setSort] = useState("sales");
+  const [open, setOpen] = useState(false);
+
+
+  const reSort = (type) => {
+    setSort(type)
+    setOpen(false)
+
+  }
   return (
-    <div className='gigs'>Gigs</div>
+    <div className='gigs'>
+      <div className="container">
+        <span className="breadcrumbs"> WORKFLEX GRAPHICS & DESING</span>
+        <h1>AI Artists</h1>
+        <p>Explore the boundries of art and technology with Workflex AI artists
+        </p>
+        <div className="menu">
+          <div className="left">
+            <span>Budged</span>
+            <input type="text" placeholder='min' />
+            <input type="text" placeholder='max' />
+            <button>Apply</button>
+
+          </div>
+          <div className="right">
+            <span className="sortBy">SortBy</span>
+            <span className="sortType">{sort === "sales" ? "Best Selling" : "Newest"}</span>
+            <KeyboardArrowDown fontSize='medium' className='down' onClick={() => setopen(!open)} />
+            {open && (
+              <div className="rightmenu">
+                {sort === "sales" ? (
+                  <span onClick={() => reSort("creatAt")}>Newest</span>
+                ) :(
+                    <span onClick={() => reSort("sales")}>Best Selling</span>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="cards">
+          {gigs.map(gig => {
+            <GigCard key={gig.id} item={gig}/>
+          })}
+        </div>
+      </div>
+    </div>
   )
 }
 
