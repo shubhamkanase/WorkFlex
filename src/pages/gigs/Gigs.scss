@@ -3,7 +3,7 @@
     justify-content: center;
 
     .container {
-        width: 1200px;
+        width: 1100px;
         padding: 30px 0px;
         display: flex;
         flex-direction: column;
@@ -11,12 +11,12 @@
 
 
         .breadcrumbs {
-            font-size: 13px;
-            font-weight: 300;
+            font-size: 20px;
+            font-weight: 400;
         }
 
         p {
-            font-weight: 300;
+            font-weight: 390;
         }
 
         .menu{
@@ -88,6 +88,14 @@
 
                 }
             }
+        }
+
+        .cards{
+            padding: 20px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
         }
     }
 }

@@ -5,7 +5,7 @@ import { Favorite, Star } from '@mui/icons-material'
 
 const GigCard = ({ item }) => {
     return (
-        <Link to="/gig/123">
+        <Link to="/gig/123" className='link'>
             <div className='gigCard'>
                 <img src={item.img} alt="" />
                 <div className="info">
@@ -16,7 +16,7 @@ const GigCard = ({ item }) => {
                     <p>{item.desc}</p>
                     <div className="star">
                         <Star className='staricon' />
-                        <span>{item.Star}</span>
+                        <span>{item.Star}5</span>
                     </div>
                 </div>
                 <hr />

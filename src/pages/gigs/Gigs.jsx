@@ -2,7 +2,7 @@ import React from 'react'
 import "./Gigs.scss"
 import { KeyboardArrowDown, Sort } from '@mui/icons-material';  
 import { useState } from 'react';
-import {gigs} from "../../data";
+import { gigs } from "../../data";
 import GigCard from '../../components/gigCard/GigCard';
 
 const Gigs = () => {
@@ -14,7 +14,6 @@ const Gigs = () => {
   const reSort = (type) => {
     setSort(type)
     setOpen(false)
-
   }
   return (
     <div className='gigs'>
@@ -34,12 +33,12 @@ const Gigs = () => {
           <div className="right">
             <span className="sortBy">SortBy</span>
             <span className="sortType">{sort === "sales" ? "Best Selling" : "Newest"}</span>
-            <KeyboardArrowDown fontSize='medium' className='down' onClick={() => setopen(!open)} />
+            <KeyboardArrowDown fontSize='medium' className='down' onClick={() => setOpen(!open)} />
             {open && (
               <div className="rightmenu">
                 {sort === "sales" ? (
-                  <span onClick={() => reSort("creatAt")}>Newest</span>
-                ) :(
+                  <span onClick={() => reSort("createdAt")}>Newest</span>
+                ) : (
                     <span onClick={() => reSort("sales")}>Best Selling</span>
                 )}
               </div>
@@ -48,7 +47,7 @@ const Gigs = () => {
         </div>
         <div className="cards">
           {gigs.map(gig => {
-            <GigCard key={gig.id} item={gig}/>
+             return <GigCard key={gig.id} item={gig}/>
           })}
         </div>
       </div>

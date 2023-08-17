@@ -1,7 +1,7 @@
 .gigCard{
-    width: 324px;
+    width: 245px;
     height: 350px;
-    border: 1px solid red;
+    border: 1px solid rgb(88, 88, 88);
     margin-bottom: 25px;
 
     img{
@@ -11,10 +11,10 @@
     }
 
     .info{
-        padding: 10px 20px;
+        padding: 10px 10px;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 8px;
 
         .user{
             display: flex;
@@ -30,7 +30,7 @@
         }
 
         p{
-            color: black;
+            color: rgb(0, 0, 0);
         }
 
         .star{
@@ -39,33 +39,34 @@
             gap: 5px;
 
             .staricon{
-                color: yellow;
+                color: rgb(255, 219, 12);
 
             }
             span{
-                font-size: 14px;
-                font-weight: bold;
+                font-size: 18px;
+                font-weight: 500;
                 color: rgb(133, 133, 0);
             }
         }
     }
     hr{
-        height: 0px;
-        border: 1px solid red;
+        border: 1px solid rgb(0, 0, 0);
 
     }
 
     .details{
-        padding: 10px 20px;
+        padding: 0px 10px;
         align-items: center;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
 
         .hearticon{
-            color: red;
+            color: rgb(107, 101, 101);
         }
 
         .price{
+        
+            text-align: center;
 
             span{
                 color: black;
@@ -73,7 +74,7 @@
             }
             h2{
                 color: black;
-                font-size: 18px;
+                font-size: 17px;
                 font-weight: 400;
             }
         }
