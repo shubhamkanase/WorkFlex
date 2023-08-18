@@ -18,7 +18,7 @@ const Gigs = () => {
   return (
     <div className='gigs'>
       <div className="container">
-        <span className="breadcrumbs"> WORKFLEX GRAPHICS & DESING</span>
+        <span className="breadcrumbs">WORKFLEX GRAPHICS & DESING</span>
         <h1>AI Artists</h1>
         <p>Explore the boundries of art and technology with Workflex AI artists
         </p>
