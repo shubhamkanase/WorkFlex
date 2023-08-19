@@ -99,6 +99,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
+          <hr />
         </>
       )}
     </div >
