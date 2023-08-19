@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Gig.scss"
-import { Star, ThumbDown, ThumbUp } from '@mui/icons-material'
+import { AccessTime, Check, Recycling, Star, ThumbDown, ThumbUp } from '@mui/icons-material'
 import { Slider } from 'infinite-react-carousel'
 
 const Gig = () => {
@@ -103,8 +103,8 @@ const Gig = () => {
           <div className="reviews">
             <h2>Reviews</h2>
             <div className="item">
-              <div className="User">
-                <img src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+              <div className="user">
+                <img className='pp' src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                 <div className="info">
                   <span>John Doe</span>
                   <div className="country">
@@ -122,12 +122,10 @@ const Gig = () => {
                   <span>5</span>
                 </div>
                 <p>
-                I just want to say that art_with_ai was the first, and after
-                this, the only artist Ill be using on Fiverr. Communication was
-                amazing, each and every day he sent me images that I was free to
-                request changes to. They listened, understood, and delivered
-                above and beyond my expectations. I absolutely recommend this
-                gig, and know already that Ill be using it again very very soon
+                The designer took my photo for my book cover to the next level!
+                Professionalism and ease of working with designer along with
+                punctuality is above industry standards!! Whatever your project
+                is, you need this designer!
               </p>
               <div className="helpful">
                 <span>Helpful?</span>
@@ -141,13 +139,13 @@ const Gig = () => {
             <hr />
 
             <div className="item">
-              <div className="User">
-                <img src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+              <div className="user">
+                <img className='pp' src="https://images.pexels.com/photos/4124367/pexels-photo-4124367.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                 <div className="info">
-                  <span>John Doe</span>
+                  <span>JSidney Owen</span>
                   <div className="country">
-                    <img src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png" alt="" />
-                    <span>United States</span>
+                    <img src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e9-1f1ea.png" alt="" />
+                    <span>Germany</span>
                   </div>
                 </div>
               </div>
@@ -160,8 +158,7 @@ const Gig = () => {
                   <span>5</span>
                 </div>
                 <p>
-                I just want to say that art_with_ai was the first, and after
-                this, the only artist Ill be using on Fiverr. Communication was
+                Amazing work! Communication was
                 amazing, each and every day he sent me images that I was free to
                 request changes to. They listened, understood, and delivered
                 above and beyond my expectations. I absolutely recommend this
@@ -169,9 +166,9 @@ const Gig = () => {
               </p>
               <div className="helpful">
                 <span>Helpful?</span>
-                <ThumbUp/>
+                <ThumbUp  className='thumbup'/>
                 <span>Yes</span>
-                <ThumbDown/>
+                <ThumbDown className='thumbdown'/>
                 <span>No</span>
               </div>
             </div>
@@ -179,13 +176,13 @@ const Gig = () => {
             <hr />
 
             <div className="item">
-              <div className="User">
-                <img src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+              <div className="user">
+                <img className='pp' src="https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                 <div className="info">
-                  <span>John Doe</span>
+                  <span>Lyle Giles</span>
                   <div className="country">
                     <img src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png" alt="" />
-                    <span>United States</span>
+                    <span>United State</span>
                   </div>
                 </div>
               </div>
@@ -219,6 +216,44 @@ const Gig = () => {
 
 
           <div className="right">
+
+          <div className="price">
+            <h3>1 AI generated image</h3>
+            <h2>$ 59.99</h2>
+          </div>
+          <p>
+            I will create a unique high quality AI generated image based on a
+            description that you give me
+          </p>
+          <div className="details">
+            <div className="item">
+            <AccessTime className='time'/>
+              <span>2 Days Delivery</span>
+            </div>
+            <div className="item">
+            <Recycling />
+              <span>3 Revisions</span>
+            </div>
+          </div>
+          <div className="features">
+            <div className="item">
+              <Check/>
+              <span>Prompt writing</span>
+            </div>
+            <div className="item">
+            <Check/>
+              <span>Artwork delivery</span>
+            </div>
+            <div className="item">
+            <Check/>
+              <span>Image upscaling</span>
+            </div>
+            <div className="item">
+            <Check/>
+              <span>Additional design</span>
+            </div>
+          </div>
+          <button>Continue</button>
 
           </div>
         </div>
