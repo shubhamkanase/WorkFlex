@@ -1,0 +1,193 @@
+.gig {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 1100px;
+        padding: 30px 0px;
+        display: flex;
+        gap: 50px;
+
+
+        .left {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+
+
+            .breadCrumbs {
+                font-size: 20px;
+                font-weight: 400;
+
+            }
+
+            .user {
+
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .pp {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+
+                }
+
+                span {
+                    font-weight: 500;
+                    font-size: 18px;
+
+                }
+
+                .stars {
+                    color: rgb(231, 170, 3);
+                    display: flex;
+                    align-items: center;
+                    gap: 0px;
+
+
+                    span {
+                        color: rgb(0, 0, 0);
+                        font-size: 20px;
+                        font-weight: 400;
+
+                    }
+                }
+            }
+
+
+
+            .slider {
+
+                margin: 0px 10px;
+                padding: 5px 30px;
+                width: 25%;
+                // height: 50%;
+                // object-fit: cover;
+
+                img {
+
+                    width: 200px;
+                    height: 350px;
+                    object-fit: cover;
+                }
+
+                .carousel-prev,
+                .carousel-next {
+
+                    background-color: rgb(167, 214, 255);
+                    border: 2px solid green;
+                    border-radius: 50%;
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    top: 30px;
+                    bottom: 10px;
+                    margin: auto;
+
+                }
+            }
+
+            h2 {
+                font-weight: 400;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                color: #141414;
+                width: 670px;
+                line-height: 25px;
+
+            }
+
+            .seller {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .stars {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+
+                        span {
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: #ffc108;
+                        }
+                    }
+
+                    button {
+                        background-color: rgb(7, 190, 7);
+                        border-radius: 5px;
+                        border: 1px solid gray;
+                        padding: 5px;
+                        font-size: 15px;
+                        font-weight: 500;
+
+                    }
+                }
+
+                .box {
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin-top: 20px;
+                    width: 670px;          
+                    .items {
+                      display: flex;
+                      justify-content: space-between;
+                      flex-wrap: wrap;
+          
+                      .item {
+                        width: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        margin-bottom: 20px;
+          
+                        .title {
+                          font-weight: 300;
+                        }
+                      }
+                    }
+
+                    hr {
+                        height: 0;
+                        border: 0.5px solid lightgray;
+                        margin-bottom: 20px;
+                      }
+                }
+          
+
+            }
+
+
+        }
+
+        .right {
+            flex: 1;
+
+
+        }
+
+    }
+}

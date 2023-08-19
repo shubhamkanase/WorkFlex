@@ -12,19 +12,19 @@ const Gig = () => {
           <h1> I will create AI generated art for you</h1>
 
           <div className="user">
-            <img src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+            <img className="pp" src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
             <span>John Doe</span>
             <div className="stars">
-              <Star className='staricon' />
-              <Star className='staricon' />
-              <Star className='staricon' />
-              <Star className='staricon' />
-              <Star className='staricon' />
+              <Star fontSize='medium' className='staricon' />
+              <Star fontSize='medium' className='staricon' />
+              <Star fontSize='medium' className='staricon' />
+              <Star fontSize='medium' className='staricon' />
+              <Star fontSize='medium' className='staricon' />
               <span>5</span>
             </div>
           </div>
 
-          <Slider slidesToShow={1} arrowsscroll={1}>
+          <Slider slidesToShow={1} arrowsscroll={1} className="slider">
 
             <img src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
             <img src="https://images.pexels.com/photos/1462935/pexels-photo-1462935.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
@@ -52,7 +52,7 @@ const Gig = () => {
           <div className="seller">
             <h2>About The Seller</h2>
             <div className="user">
-              <img src="" alt="" />
+              <img src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
               <div className="info">
 
                 <span>John Doe</span>
@@ -137,6 +137,84 @@ const Gig = () => {
                 <span>No</span>
               </div>
             </div>
+
+            <hr />
+
+            <div className="item">
+              <div className="User">
+                <img src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+                <div className="info">
+                  <span>John Doe</span>
+                  <div className="country">
+                    <img src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png" alt="" />
+                    <span>United States</span>
+                  </div>
+                </div>
+              </div>
+              <div className="stars">
+                  <Star className='staricon' />
+                  <Star className='staricon' />
+                  <Star className='staricon' />
+                  <Star className='staricon' />
+                  <Star className='staricon' />
+                  <span>5</span>
+                </div>
+                <p>
+                I just want to say that art_with_ai was the first, and after
+                this, the only artist Ill be using on Fiverr. Communication was
+                amazing, each and every day he sent me images that I was free to
+                request changes to. They listened, understood, and delivered
+                above and beyond my expectations. I absolutely recommend this
+                gig, and know already that Ill be using it again very very soon
+              </p>
+              <div className="helpful">
+                <span>Helpful?</span>
+                <ThumbUp/>
+                <span>Yes</span>
+                <ThumbDown/>
+                <span>No</span>
+              </div>
+            </div>
+
+            <hr />
+
+            <div className="item">
+              <div className="User">
+                <img src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+                <div className="info">
+                  <span>John Doe</span>
+                  <div className="country">
+                    <img src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png" alt="" />
+                    <span>United States</span>
+                  </div>
+                </div>
+              </div>
+              <div className="stars">
+                  <Star className='staricon' />
+                  <Star className='staricon' />
+                  <Star className='staricon' />
+                  <Star className='staricon' />
+                  <Star className='staricon' />
+                  <span>5</span>
+                </div>
+                <p>
+                I just want to say that art_with_ai was the first, and after
+                this, the only artist Ill be using on Fiverr. Communication was
+                amazing, each and every day he sent me images that I was free to
+                request changes to. They listened, understood, and delivered
+                above and beyond my expectations. I absolutely recommend this
+                gig, and know already that Ill be using it again very very soon
+              </p>
+              <div className="helpful">
+                <span>Helpful?</span>
+                <ThumbUp/>
+                <span>Yes</span>
+                <ThumbDown/>
+                <span>No</span>
+              </div>
+            </div>
+
+
           </div>
 
 
