@@ -41,7 +41,7 @@ const MyGigs = () => {
             <td>120.<sup>99</sup></td>
             <td>41</td>
             <td>
-               <Delete/>
+            <Delete className='delete'/>
             </td>
           </tr>
           <tr>
@@ -56,7 +56,7 @@ const MyGigs = () => {
             <td>79.<sup>99</sup></td>
             <td>55</td>
             <td>
-              <Delete/>
+            <Delete className='delete'/>
             </td>
           </tr>
           <tr>
@@ -71,7 +71,7 @@ const MyGigs = () => {
             <td>119.<sup>99</sup></td>
             <td>29</td>
             <td>
-              <Delete/>
+            <Delete className='delete'/>
             </td>
           </tr>
           <tr>
@@ -86,7 +86,7 @@ const MyGigs = () => {
             <td>59.<sup>99</sup></td>
             <td>34</td>
             <td>
-            <Delete/>
+            <Delete className='delete'/>
             </td>
           </tr>
           <tr>
@@ -101,7 +101,7 @@ const MyGigs = () => {
             <td>110.<sup>99</sup></td>
             <td>16</td>
             <td>
-            <Delete/>
+            <Delete className='delete'/>
             </td>
           </tr>
 
