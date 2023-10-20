@@ -4,15 +4,15 @@ const { Schema } = mongoose;
 const GigSchema = new Schema({
   userId: {
     type: String,
-    require: true,
+    required: true,
   },
   title: {
     type: String,
-    require: true,
+    required: true,
   },
   desc: {
     type: String,
-    require: true,
+    required: true,
   },
   totalStars: {
     type: Number,
@@ -24,39 +24,39 @@ const GigSchema = new Schema({
   },
   cat: {
     type: String,
-    require: true,
+    required: true,
   },
   price: {
     type: Number,
-    require: true,
+    required: true,
   },
   cover: {
     type: String,
-    require: true,
+    required: true,
   },
   images: {
-    type: String,
-    require: false,
+    type: [String],
+    required: false,
   },
   shortTitle: {
     type: String,
-    require: true,
+    required: true,
   },
   shortDesc: {
     type: String,
-    require: true,
+    required: true,
   },
   deliveryTime: {
     type: Number,
-    require: true,
+    required: true,
   },
   revisionNumber: {
     type: Number,
-    require: true,
+    required: true,
   },
   features: {
     type: [String],
-    require: false,
+    required: false,
   },
   sales: {
     type: Number,
