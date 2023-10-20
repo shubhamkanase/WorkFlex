@@ -1,4 +1,4 @@
-import Express from "express";
+import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import authRoute from "./routes/auth.route.js";
@@ -9,7 +9,7 @@ import messageRoute from "./routes/message.route.js";
 import orderRoute from "./routes/order.route.js";
 import reviewRoute from "./routes/review.route.js";
 
-const app = Express()
+const app = express()
 dotenv.config();
 mongoose.set('strictQuery', true);
 
@@ -22,6 +22,8 @@ const connect = async () => {
     console.log(error);
   }
 }
+
+app.use(express.json());
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
