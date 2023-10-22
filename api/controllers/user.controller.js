@@ -18,3 +18,6 @@ export const deleteUser = async (req, res)=>{
 
 
 };
+export const fn = (req, res)=>{
+
+}
