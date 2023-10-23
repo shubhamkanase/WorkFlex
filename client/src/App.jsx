@@ -9,6 +9,8 @@ import MyGigs from "./pages/myGigs/MyGigs"
 import Messages from "./pages/messages/Messages"
 import Message from "./pages/message/Message"
 import Add from "./pages/add/Add";
+import Register from "./pages/register/Register";
+import Login from "./pages/login/Login.jsx";
 
 
 
@@ -66,6 +68,14 @@ function App() {
         {
           path: "/message/:id",
           element: <Message />
+        },
+        {
+          path: "/register",
+          element: <Register />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
         },
       ]
 
