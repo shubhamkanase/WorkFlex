@@ -10,7 +10,7 @@ import Messages from "./pages/messages/Messages"
 import Message from "./pages/message/Message"
 import Add from "./pages/add/Add";
 import Register from "./pages/register/Register";
-import Login from "./pages/login/Login.jsx";
+import Login from "./pages/login/Login";
 
 
 
