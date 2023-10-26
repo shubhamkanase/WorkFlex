@@ -52,7 +52,7 @@ function Register() {
           <input
             name="username"
             type="text"
-            placeholder="johndoe"
+            placeholder="Enter your name"
             onChange={handleChange}
           />
           <label htmlFor="">Email</label>

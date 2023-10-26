@@ -49,37 +49,45 @@ const Navbar = () => {
           <span>WorkFlex Bussiness</span>
           <span>Explore</span>
           <span>English</span>
-          <span>Sign in</span>
 
-          {!currentUser?.isSeller && <spna>Become a Seller</spna>}
-          {!currentUser && <button>Join</button>}
-          {currentUser && (
+          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
-              <img
-                src={currentUser.img || "/img/noavatar.jpg"}
-                alt=""
-              />
+              <img src={currentUser.img || "/img/noavatar.jpg"} alt="" />
               <span>{currentUser?.username}</span>
-              {!open && <div className="options">
-                {
-                  currentUser?.isSeller && (
+              {open && (
+                <div className="options">
+                  {currentUser.isSeller && (
                     <>
-                      <Link to="/mygigs">Gigs</Link>
-                      <Link to="/add">Add New Gig</Link>
+                      <Link className="link" to="/mygigs">
+                        Gigs
+                      </Link>
+                      <Link className="link" to="/add">
+                        Add New Gig
+                      </Link>
                     </>
                   )}
-                <Link to="/orders">Orders</Link>
-                <Link to="/messages">Messages</Link>
-
-
-                <Link onClick={handleLogout}>
-                  Logout
-                </Link>
-              </div>}
+                  <Link className="link" to="/orders">
+                    Orders
+                  </Link>
+                  <Link className="link" to="/messages">
+                    Messages
+                  </Link>
+                  <Link className="link" onClick={handleLogout}>
+                    Logout
+                  </Link>
+                </div>
+              )}
             </div>
+          ) : (
+            <>
+              <Link to="/login" className="link">Sign in</Link>
+              <Link className="link" to="/register">
+                <button>Join</button>
+              </Link>
+            </>
           )}
         </div>
-
       </div>
       {(active || pathname !== "/") && (
         <>
