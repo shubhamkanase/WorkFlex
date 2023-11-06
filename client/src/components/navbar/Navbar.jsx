@@ -41,7 +41,7 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="container">
         <div className="logo">
-          <Link>
+          <Link to={"/"}>
             <img className="logo" src="./img/WorkFlexlogo.png" alt="" />
           </Link>
         </div>

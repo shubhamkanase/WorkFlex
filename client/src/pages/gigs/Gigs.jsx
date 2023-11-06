@@ -16,21 +16,13 @@ const Gigs = () => {
 
   const {search} = useLocation()
 
-  // console.log(location);
-
   const { isLoading, error, data, refetch } = useQuery({
     queryKey: ['gigs'],
     queryFn: () =>
       newRequest
-      .get(`/gigs`,{
-        params: {
-          search: search,
-          min: minRef.current.value,
-          max: maxRef.current.value,
-          sort: sort
-        },
-      })
+      .get(`/gigs${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`,{})
       .then((res) => {
+        console.log(res.data)
         return res.data;
 
       }),

@@ -17,7 +17,7 @@ const Home = () => {
       <TrustedBy />
       <Slide slidesToShow={5} arrowsSrcoll={5}>
         {cards.map(card => (
-          <CatCard key={card.id} item={card} />
+          <CatCard key={card.id} card={card} />
         ))}
 
       </Slide>
