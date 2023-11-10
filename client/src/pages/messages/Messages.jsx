@@ -27,7 +27,7 @@ const Messages = () => {
 
   const mutation = useMutation({
     mutationFn: (id) => {
-      return newRequest.post(`/conversations"${id}`);
+      return newRequest.put(`/conversations/${id}`);
     },
     onSuccess:()=>{
       queryClient.invalidateQueries(["conversations"])
@@ -56,7 +56,7 @@ const Messages = () => {
               <th>Date</th>
               <th>Action</th>
             </tr>
-            {data.map((c) => (
+            {data && data.map((c) => (
               <tr
                 className={
                   ((currentUser.isSeller && !c.readBySeller) ||
