@@ -19,7 +19,6 @@ const Orders = () => {
       .then((res) => {
         console.log(res.data)
         return res.data;
-
       }),
   });
 
@@ -66,7 +65,7 @@ return (
             <tr key={order._id}>
             <td> 
               <img 
-              className='image' 
+              className='image'  
               src={order.img}
                alt="" 
                />
