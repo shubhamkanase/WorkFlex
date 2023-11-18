@@ -14,6 +14,7 @@ export const createGig = async (req, res, next) => {
     const savedGig = await newGig.save();
     res.status(201).json(savedGig);
   } catch (err) {
+    console.log(err)
     next(err);
   }
 };
@@ -55,6 +56,20 @@ export const getGigs = async (req, res, next) => {
   };
   try {
     const gigs = await Gig.find(filters).sort({ [q.sort]: -1 });
+    res.status(200).send(gigs);
+  } catch (err) {
+    next(err);
+  }
+};
+export const getGigsByUser = async (req, res, next) => {
+  const userId = req.query.userId; // Extract userId from the query parameters
+
+  const filters = {
+    userId: userId, // Filter by the provided userId
+  };
+
+  try {
+    const gigs = await Gig.find(filters).sort({ createdAt: -1 }); // Assuming a field like `createdAt` exists to sort by
     res.status(200).send(gigs);
   } catch (err) {
     next(err);

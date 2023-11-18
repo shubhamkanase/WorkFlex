@@ -5,22 +5,6 @@ import { Favorite, Star } from '@mui/icons-material';
 import { useQuery } from '@tanstack/react-query';
 import newRequest from '../../utils/newRequest';
 
-// const GigCard = ({ item }) => {
-//   const { isLoading, error, data } = useQuery({
-//     queryKey: [item.userId],
-//     queryFn: () =>
-//     //   newRequest.get(`/users/${item.userId}`).then((res) => {
-//     //     return res.data;
-//     //   }),
-//     newRequest.get(`/users/${item.userId}`)
-//   .then((res) => {
-//     // Handle the successful response
-//   })
-//   .catch((error) => {
-//     console.error('Request failed:', error);
-//   })
-
-//   });
 
 const GigCard = ({ item }) => {
     const { isLoading, error, data } = useQuery({

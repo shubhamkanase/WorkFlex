@@ -40,6 +40,10 @@
               height: 25px;
               object-fit: cover;
             }
+            
+            .delete{
+              cursor: pointer;
+            }
   
           }
           &:nth-child(even) {

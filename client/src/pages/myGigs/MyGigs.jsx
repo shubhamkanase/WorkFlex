@@ -15,7 +15,8 @@ function MyGigs() {
   const { isLoading, error, data } = useQuery({
     queryKey: ["myGigs"],
     queryFn: () =>
-      newRequest.get(`/gigs?userId=${currentUser.id}`).then((res) => {
+      newRequest.get(`/gigs/mygigs?userId=${currentUser._id}`).then((res) => {
+        console.log(res.data)
         return res.data;
       }),
   });
@@ -40,7 +41,7 @@ function MyGigs() {
         "loading"
       ) : error ? (
         "error"
-      ) : ( <div className="container">
+      ) : data && data.length > 0 ? ( <div className="container">
         <div className="title">
           <h1>Gigs</h1>
           <Link to='/add'>
@@ -61,12 +62,15 @@ function MyGigs() {
             <td>{gig.title}</td>
             <td>{gig.price}</td>
             <td>{gig.sales}</td>
-            <td> <Delete className='delete' onClick={()=>handleDelete(gig.id)}/>
+            <td> <Delete className='delete' onClick={()=>handleDelete(gig._id)}/>
             </td>
           </tr>
           ))}
         </table>
-      </div>)}
+      </div>)
+      : (
+        <div>No gigs available.</div>
+      )}
     </div>
   )
 }

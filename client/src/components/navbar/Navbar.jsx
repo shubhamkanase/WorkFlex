@@ -3,11 +3,22 @@ import "./Navbar.scss"
 import { Link, json, useLocation, useNavigate } from 'react-router-dom'
 import newRequest from '../../utils/newRequest';
 
+
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(true);
 
   const { pathname } = useLocation()
+
+  // const Navigate = useNavigate();
+  // ... other code
+
+  const handleWorkFlexBusinessClick = () => {
+    // Navigate to the 'Info' page
+    navigate('/info');
+  };
+
 
   const isActive = () => {
     Window.srollY > 0 ? setActive(true) : setActive(false);
@@ -46,7 +57,9 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="link">
-          <span>WorkFlex Bussiness</span>
+          <span onClick={handleWorkFlexBusinessClick}> 
+            WorkFlex Bussiness    
+            </span>
           <span>Explore</span>
           <span>English</span>
 

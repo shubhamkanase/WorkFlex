@@ -13,6 +13,7 @@ import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Success from "./pages/success/Success";
 import Pay from "./pages/pay/Pay";
+import Info from "./pages/info/Info";
 
 
 import {
@@ -26,6 +27,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';
+
 
 
 function App() {
@@ -52,6 +54,10 @@ function App() {
         {
           path: "/",
           element: <Home />
+        },
+        {
+          path: "/info",
+          element: <Info/>
         },
         {
           path: "/gigs",
