@@ -15,7 +15,7 @@ import Success from "./pages/success/Success";
 import Pay from "./pages/pay/Pay";
 import Info from "./pages/info/Info";
 
-
+import "./App.scss"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -27,6 +27,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';
+import WhyFlex from "./pages/whyFlex/WhyFlex";
 
 
 
@@ -58,6 +59,10 @@ function App() {
         {
           path: "/info",
           element: <Info/>
+        },
+        {
+          path: "/whyFlex",
+          element: <WhyFlex/>
         },
         {
           path: "/gigs",

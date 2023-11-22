@@ -84,6 +84,12 @@ const Add = () => {
               <option value="web">Web Development</option>
               <option value="animation">Animation</option>
               <option value="music">Music</option>
+              <option value="translation">Translation</option>
+              <option value="ai">AI</option>
+              <option value="digimarketing">Digimarketing</option>
+              <option value="technology">Technology</option>
+              <option value="business">Business</option>
+              <option value="lifestyle">Lifestyle</option>
             </select>
             <div className="images">
               <div className="imagesInputs">

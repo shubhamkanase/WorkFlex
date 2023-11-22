@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Navbar.scss"
 import { Link, json, useLocation, useNavigate } from 'react-router-dom'
 import newRequest from '../../utils/newRequest';
+import Gigs from '../../pages/gigs/Gigs';
 
 
 
@@ -15,8 +16,10 @@ const Navbar = () => {
   // ... other code
 
   const handleWorkFlexBusinessClick = () => {
-    // Navigate to the 'Info' page
     navigate('/info');
+  };
+  const handleWhyWorkflexclick = () => {
+    navigate('/whyFlex');
   };
 
 
@@ -60,10 +63,16 @@ const Navbar = () => {
           <span onClick={handleWorkFlexBusinessClick}> 
             WorkFlex Bussiness    
             </span>
-          <span>Explore</span>
-          <span>English</span>
+          {/* <span>Explore</span>
+          <span>English</span> */}
+          <span onClick={handleWhyWorkflexclick}>
+            Why WorkFlex</span>
 
-          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {!currentUser?.isSeller && 
+           <Link className="link" to="/register">
+          <span>Become a Seller</span>
+          </Link>
+          }
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
               <img src={currentUser.img || "/img/noavatar.jpg"} alt="" />
@@ -107,31 +116,31 @@ const Navbar = () => {
           <hr />
           <div className='menuItems'>
             <div className="menu">
-              <Link className='links' to="/">
+              <Link className='links' to={`/gigs?cat=design`}>
                 Graphic & Design
               </Link>
-              <Link className='links' to="/">
+              <Link className='links'to={`/gigs?cat=animation`}>
                 Video & Animation
               </Link>
-              <Link className='links' to="/">
+              <Link className='links' to={`/gigs?cat=translation`}>
                 Writing & Translation
               </Link>
-              <Link className='links' to="/">
+              <Link className='links' to={`/gigs?cat=ai`}>
                 AI Services
               </Link>
-              <Link className='links' to="/">
+              <Link className='links' to={`/gigs?cat=digimarketing`}>
                 Digital & Marketing
               </Link>
-              <Link className='links' to="/">
+              <Link className='links' to={`/gigs?cat=music`}>
                 Music & Audio
               </Link>
-              <Link className='links' to="/">
+              <Link className='links'to={`/gigs?cat=technology`}>
                 Programming & Tech
               </Link>
-              <Link className='links' to="/">
+              <Link className='links' to={`/gigs?cat=business`}>
                 Business
               </Link>
-              <Link className='links' to="/">
+              <Link className='links' to={`/gigs?cat=lifestyle`}>
                 Lifestyle
               </Link>
             </div>

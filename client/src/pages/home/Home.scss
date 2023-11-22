@@ -1,11 +1,18 @@
 .home {
+    background-color: rgba(10, 10, 10, 0.973);
 
     .features {
         background-color: rgb(205, 226, 245);
         justify-content: center;
         display: flex;
         padding: 20px 0px 10px 0px;
-        
+
+        .checkicon {
+            color: green;
+            padding-right: 7px;
+        }
+
+
 
         &.dark {
             background-color: rgba(0, 0, 0, 0.952);
@@ -21,34 +28,37 @@
                     h1 {
                         color: rgb(10, 247, 10);
                         margin-top: -60px;
-                        font-weight: 450;}
+                        font-weight: 450;
+                    }
 
-                        strong{
-                            color: white;
-                            font-weight: 390;
-                        }
+                    strong {
+                        color: white;
+                        font-weight: 390;
+                    }
+
                     p {
                         color: white;
                         margin-bottom: 20px;
                         font-weight: 350;
-                        font-size:18px;
+                        font-size: 18px;
                     }
 
                     .title {
                         color: white;
                         font-weight: 300;
                         font-size: 18px;
-                        
+
                     }
-                    .checkicon{
+
+                    .checkicon {
                         padding-right: 10px;
                         color: green;
-                        
+
 
                     }
 
                     button {
-                        background-color:rgb(9, 218, 9);
+                        background-color: rgb(9, 218, 9);
                         color: rgb(0, 0, 0);
                         font-size: medium;
                         padding: 6px 5px;
@@ -60,7 +70,7 @@
                     }
 
                     .imgitem {
-                    
+
                         height: 400px;
                         width: 400px;
                         margin: -25px 0px 0px 0px;

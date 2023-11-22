@@ -4,6 +4,7 @@
     border-radius: 5px;
     cursor: pointer;
     overflow: hidden;
+    background-color: azure;
 
     img {
         width: 100%;
@@ -26,11 +27,13 @@
         }
         .texts{
             h2{
+                color: black;
                 font-size: 14px;
                 font-weight: 400;
 
             }
             span{
+                color: black;
                 font-weight: 14px;
                 font-size: 13px;
 

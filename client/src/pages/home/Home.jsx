@@ -9,6 +9,7 @@ import CatCard from '../../components/catCard/CatCard'
 import { projects } from '../../data'
 import ProjectCard from '../../components/projectCard copy/ProjectCard'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -26,7 +27,8 @@ const Home = () => {
           <div className="item">
             <h1> A whole world of freelancing talent at your fingertips</h1>
             <div className="title">
-              <img src="./img/checkicon.png" alt="" />
+              {/* <img src="./img/checkicon.png" alt="" />*/}
+              <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }} />
               The best for every budget
             </div>
             <p>
@@ -34,7 +36,7 @@ const Home = () => {
               just project-based pricing.
             </p>
             <div className="title">
-              <img src="./img/checkicon.png" alt="" />
+              <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }} />
               Quality work done quickly
             </div>
             <p>
@@ -42,7 +44,7 @@ const Home = () => {
               minutes.
             </p>
             <div className="title">
-              <img src="./img/checkicon.png" alt="" />
+              <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }} />
               Protected payments, every time
             </div>
             <p>
@@ -50,7 +52,7 @@ const Home = () => {
               until you approve the work.
             </p>
             <div className="title">
-              <img src="./img/checkicon.png" alt="" />
+              <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }} />
               24/7 support
             </div>
             <p>
@@ -71,28 +73,22 @@ const Home = () => {
               dedicated to businesses</p>
 
             <div className="title">
-              <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }}/>
-              Connect to freelancers with proven business experience 
+              <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }} />
+              Connect to freelancers with proven business experience
             </div>
             <div className="title">
-            <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }}/>
+              <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }} />
               Get matched with the perfect talent by a customer success manager
             </div>
             <div className="title">
-            <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }}/>
+              <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }} />
               Manage teamwork work and boost productivity with one powerful workspace
             </div>
-            <button className='btnexplore'>Explore WorkFlex Bussiness</button>
-
-            {/* <h1> A Bussiness Solution Desinged For Teams</h1>
-            <p> WorkFlex is an innovative freelancing platform designed to connect skilled professionals with employers seeking their expertise. This web-based application serves as a marketplace where individuals and businesses can collaborate on various projects and services. WorkFlex utilizes HTML, CSS, JavaScript, ReactJS, NodeJS, and MongoDB to provide an intuitive and efficient user experience. The platform facilitates secure communications, streamlined project management, and seamless payments, enhancing productivity and
-              accessibility for both freelancers and employers.
-              
-              </p> */}
-
+            <Link className="link" to="/info">
+              <button className='btnexplore'>Explore WorkFlex Bussiness</button>
+            </Link>
           </div>
           <div className="item">
-            {/* <img src="./img/feactureBusiness.png" alt="" /> */}
             <img className='imgitem' src="./img/man.png" alt="" />
           </div>
         </div>
