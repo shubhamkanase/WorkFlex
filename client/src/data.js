@@ -56,8 +56,8 @@ export const cards = [
     },
     {
       id: 8,
-      cat: "design",
-      title: "Illustration",
+      cat: "music",
+      title: "silent vioce",
       desc: "Color dreams",
       img: "https://img.freepik.com/free-photo/abstract-design-with-colorful-patterns-nature-leaf-generated-by-ai_188544-15573.jpg?w=826&t=st=1691676628~exp=1691677228~hmac=e5a135c304986dadad287650ac3dd0cd3d99d6c64f2b9174d30959ca347c91ca",
       

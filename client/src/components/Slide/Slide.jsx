@@ -3,7 +3,9 @@ import "./Slide.scss"
 import Slider from 'infinite-react-carousel';
 
 
+
 const Slide = ({children,slidesToShow,arrowsSrcoll}) => {
+  
   return (
     <div className='slide'>
       <div className="container">

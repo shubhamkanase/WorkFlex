@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
+import "./CheckoutForm.scss"
 import {
   PaymentElement,
   LinkAuthenticationElement,
   useStripe,
   useElements,
 } from "@stripe/react-stripe-js";
+
 
 const CheckoutForm = () => {
   const stripe = useStripe();

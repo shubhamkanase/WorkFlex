@@ -18,101 +18,136 @@
         background-color: rgb(29, 29, 37);
     }
 
-.logo {
-    height: 250px;
-    width: 250px;
-    margin-top: -48px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.link {
-    display: flex;
-    color: rgb(255, 255, 255);
-    align-items: center;
-    gap: 24px;
-    margin-right: 85px;
-    font-weight: 400px;
-    cursor: pointer;
-    text-decoration: none;
-
-    span:hover{
-        color: rgb(22, 255, 53);
-    
-    }
-
-    button{
-        padding: 5px 10px;
-        font-weight: 500px;
-        font-size:15px;
-        border-radius: 8px;
-        color: black;
-        background-color: rgb(0, 255, 0);
+    .logo {
+        height: 250px;
+        width: 250px;
+        margin-top: -48px;
+        margin-left: 20px;
         cursor: pointer;
     }
-    
-button:hover{
-    background-color: rgb(80, 255, 138);
-}
 
-
-}
-
-.user{
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    cursor: pointer;
-    position: relative;
-
-    img{
-        height: 32px;
-        width: 32px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .options{
-        position: absolute;
-        top: 50px;
-        padding: 10px;
-        background-color:aliceblue;
+    .link {
         display: flex;
-        flex-direction: column;
-        border: 1px solid rgb(0, 0, 0);
-        color: rgb(0, 0, 0);
-        border-radius: 10px;
-        gap: 5px;
-        width: 150px;
-        font-weight: 400;
-        
-        .link{
-            color: black;  
+        color: rgb(255, 255, 255);
+        align-items: center;
+        gap: 24px;
+        margin-right: 85px;
+        font-weight: 400px;
+        cursor: pointer;
+        text-decoration: none;
+
+        span:hover {
+            color: rgb(22, 255, 53);
 
         }
 
+        button {
+            padding: 5px 10px;
+            font-weight: 500px;
+            font-size: 15px;
+            border-radius: 8px;
+            color: black;
+            background-color: rgb(0, 255, 0);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(80, 255, 138);
+        }
+
+
     }
-}
-.menu{
-    border: 1px solid gray;
-    align-items: center;
-    background-color: rgb(255, 250, 250);
-    justify-content: space-between;
-    display: flex;
-    max-width: 100%;
-    padding :5px 90px 5px 90px;
-}
+
+    .user {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .options {
+            position: absolute;
+            top: 50px;
+            padding: 10px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            gap: 5px;
+            width: 150px;
+            font-weight: 400;
+
+            .link {
+                color: black;
+
+            }
+
+        }
+    }
+
+    .menuItems {
 
 
-.links{
-    color:rgb(0, 0, 0);
-    font-size: 15px;
-    text-decoration: none;
 
-}
-hr{
-    max-width: 100%;
-    height: 0;
-    border: 1px solid rgb(124, 194, 83);
-}
+        .menu {
+            // border: 1px solid rgb(255, 0, 0);
+            align-items: center;
+            background-color: rgba(27, 20, 41, 0.945);
+            justify-content: space-between;
+            display: flex;
+            max-width: 100%;
+            height: 30px;
+            padding: 5px 90px 5px 90px;
+        }
+
+
+        .links {
+            color: rgb(201, 200, 200);
+            font-size: 15px;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            text-decoration: none; 
+            margin-right: 20px;
+
+        }
+          
+          .links::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px; /* Adjust this value to change the distance of the line from the text */
+            width: 100%;
+            height: 2px;
+            background-color: transparent; /* Initially transparent */
+            transform: scaleX(0);
+            transition: transform 0.3s ease, background-color 0.3s ease; /* Adding transitions for both properties */
+          }
+
+          .links:hover {
+            color:white; /* Change this to the desired text color on hover */
+          }
+          
+          
+          .links:hover::after {
+            transform: scaleX(1);
+            background-color: rgb(40, 211, 40) /* Change this to the desired line color */
+          }
+    }
+
+    hr {
+        max-width: 100%;
+        height: 0;
+        border: 1px solid grey
+    }
+
 }

@@ -1,7 +1,10 @@
+
+
 .slide {
     display: flex;
     justify-content: center;
     padding: 100px 0px;
+   
 
     .container {
         width: 1000px;
@@ -10,7 +13,7 @@
         .carousel-next {
             width: 40px;
             height: 40px;
-            background-color:  rgb(38, 38, 49);;
+            background-color:  rgb(48, 48, 63);;
             border: 2px solid rgb(255, 255, 255);
             border-radius: 50%;
             position: absolute;
@@ -19,5 +22,6 @@
             margin: auto;
 
         }
+        
     }
 }

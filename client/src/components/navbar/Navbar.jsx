@@ -111,7 +111,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      {(active || pathname !== "/") && (
+      {/* {(active || pathname !== "/") && ( */}
         <>
           <hr />
           <div className='menuItems'>
@@ -145,9 +145,9 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <hr />
+          {/* <hr /> */}
         </>
-      )}
+       {/* )} */}
     </div >
   )
 }
