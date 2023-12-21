@@ -1,0 +1,108 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 50px 0px;
+
+    .container {
+
+        width: 1000px;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2{
+                    font-size: 22px;
+                }
+
+                span{
+                    font-size: 15px;
+                }
+            }
+        }
+
+        hr{
+            margin: 50px 0px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left {
+
+                // display: flex;
+                align-items: center;
+                gap: 20px;
+
+                h1{
+                    color: rgb(7, 185, 7);
+                    -webkit-text-stroke: 1px  black;
+
+                }
+            }
+
+            .right {
+
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            
+
+                .social{
+                    align-items: center;
+                    gap: 10px;
+                    display: flex;
+
+                    .twitcolor{
+                        color: rgb(53, 181, 204);
+                        cursor: pointer;
+
+                    }
+                    .facecolor{
+                        color: rgb(41, 41, 248);
+                        cursor: pointer;
+                    }
+                    .linkcolor{
+                        color: rgb(30, 63, 255);
+                        cursor: pointer;
+                    }
+                    .instacolor{
+                        color: rgb(247, 22, 97);
+                         cursor: pointer;
+                    }
+
+                }
+
+                .link {
+                    display: flex;
+                    align-items: center;
+                    // gap: 1px;
+
+                    .langcolor{
+                        color: rgb(0, 81, 255);
+                        cursor: pointer;
+                    }
+                    .attachcolor{
+                        color: rgb(29, 29, 29);
+                        cursor: pointer;
+
+                    }
+                    .access{
+                        color: black;
+                        cursor: pointer;
+
+                    }
+                }
+
+            }
+        }
+    }
+}

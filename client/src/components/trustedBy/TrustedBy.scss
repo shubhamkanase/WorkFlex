@@ -1,0 +1,41 @@
+.trustedBy {
+    height: 100px;
+    margin-top: -175px;
+    
+
+    .container{
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-bottom: 20px;
+        color: white;
+        
+    }
+    .trustContainer {
+        
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        color: rgb(0, 0, 0);
+
+
+        img {
+            height: 60px;
+            object-fit: contain;
+           
+        }
+        .googleicon{
+            height: 200px;
+            width: 200px;
+            margin-top: -75px;
+           
+        }
+        .netflixicon{
+            height: 130px;
+            width: 130px;
+            margin-top: -35px;
+        }
+
+    }
+}
