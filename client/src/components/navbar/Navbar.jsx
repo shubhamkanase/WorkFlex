@@ -4,16 +4,12 @@ import { Link, json, useLocation, useNavigate } from 'react-router-dom'
 import newRequest from '../../utils/newRequest';
 import Gigs from '../../pages/gigs/Gigs';
 
-
-
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(true);
 
   const { pathname } = useLocation()
 
-  // const Navigate = useNavigate();
-  // ... other code
 
   const handleWorkFlexBusinessClick = () => {
     navigate('/info');
@@ -33,9 +29,6 @@ const Navbar = () => {
       window.removeEventListener('scroll', isActive)
     }
   }, []);
-
-
-
 
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
@@ -63,8 +56,8 @@ const Navbar = () => {
           <span onClick={handleWorkFlexBusinessClick}> 
             WorkFlex Bussiness    
             </span>
-          {/* <span>Explore</span>
-          <span>English</span> */}
+  
+          <span>English</span> 
           <span onClick={handleWhyWorkflexclick}>
             Why WorkFlex</span>
 
@@ -111,7 +104,6 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      {/* {(active || pathname !== "/") && ( */}
         <>
           <hr />
           <div className='menuItems'>
@@ -145,9 +137,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          {/* <hr /> */}
         </>
-       {/* )} */}
     </div >
   )
 }

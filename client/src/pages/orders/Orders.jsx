@@ -58,7 +58,6 @@ return (
             <th>Image</th>
             <th>Title</th>
             <th>Price</th>
-            {/* <th>{currentUser?.isSeller? "buyer": "seller"}</th> */}
             <th>Contact</th>
           </tr>
           {data.map((order) => (
@@ -74,9 +73,6 @@ return (
             <td>{order.price}</td>
             <td> <Message className='message' onClick={() => handleContact(order)}/></td>
           </tr>))}
-
-          
-
         </table>
       </div> )}
     </div>

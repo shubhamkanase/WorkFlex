@@ -95,11 +95,7 @@
     }
 
     .menuItems {
-
-
-
         .menu {
-            // border: 1px solid rgb(255, 0, 0);
             align-items: center;
             background-color: rgba(27, 20, 41, 0.945);
             justify-content: space-between;
@@ -116,32 +112,34 @@
             text-decoration: none;
             position: relative;
             display: inline-block;
-            text-decoration: none; 
+            text-decoration: none;
             margin-right: 20px;
 
         }
-          
-          .links::after {
+
+        .links::after {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -3px; /* Adjust this value to change the distance of the line from the text */
+            bottom: -3px;
             width: 100%;
             height: 2px;
-            background-color: transparent; /* Initially transparent */
+            background-color: transparent;
             transform: scaleX(0);
-            transition: transform 0.3s ease, background-color 0.3s ease; /* Adding transitions for both properties */
-          }
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            
+        }
 
-          .links:hover {
-            color:white; /* Change this to the desired text color on hover */
-          }
-          
-          
-          .links:hover::after {
+        .links:hover {
+            color: white;
+            
+        }
+
+
+        .links:hover::after {
             transform: scaleX(1);
-            background-color: rgb(40, 211, 40) /* Change this to the desired line color */
-          }
+            background-color: rgb(40, 211, 40)
+        }
     }
 
     hr {

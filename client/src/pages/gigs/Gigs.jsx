@@ -81,9 +81,7 @@ if (category === 'design') {
   title = 'Lifestyle';
   subtitle = 'Enhance your lifestyle with our specialized services.';
 }
-  // GRAPHICS & DESING
-  // AI Artists
-  // Explore the boundries of art and technology with Workflex AI artists
+
   return (
     <div className='gigs'>
       <div className="container">

@@ -61,7 +61,6 @@ function Gig () {
                     {Array(Math.round(data.totalStars / data.starNumber))
                       .fill()
                       .map((item, i) => (
-                        // <img src="/img/star.png" alt="" key={i} />
                         <Star fontSize='medium' className='staricon' key={i} />
                       ))}
                     <span>{Math.round(data.totalStars / data.starNumber)}</span>
@@ -99,7 +98,6 @@ function Gig () {
                         {Array(Math.round(data.totalStars / data.starNumber))
                           .fill()
                           .map((item, i) => (
-                            //<img src="/img/star.png" alt="" key={i} />
                             <Star className='staricon' key={i} />
                           ))}
                         <span>
