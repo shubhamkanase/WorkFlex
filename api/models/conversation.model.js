@@ -5,7 +5,10 @@ const ConversationSchema = new Schema({
   id:{
     type: String,
     required: true,
+<<<<<<< HEAD
     unique: true,
+=======
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
   },
   sellerId:{
     type: String,

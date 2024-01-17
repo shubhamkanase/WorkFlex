@@ -4,16 +4,22 @@ import { Link, json, useLocation, useNavigate } from 'react-router-dom'
 import newRequest from '../../utils/newRequest';
 import Gigs from '../../pages/gigs/Gigs';
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(true);
 
   const { pathname } = useLocation()
 
+<<<<<<< HEAD
   // const Navigate = useNavigate();
   // ... other code
+=======
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
 
   const handleWorkFlexBusinessClick = () => {
     navigate('/info');
@@ -34,9 +40,12 @@ const Navbar = () => {
     }
   }, []);
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   const navigate = useNavigate();
@@ -63,8 +72,13 @@ const Navbar = () => {
           <span onClick={handleWorkFlexBusinessClick}> 
             WorkFlex Bussiness    
             </span>
+<<<<<<< HEAD
           {/* <span>Explore</span>
           <span>English</span> */}
+=======
+  
+          <span>English</span> 
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
           <span onClick={handleWhyWorkflexclick}>
             Why WorkFlex</span>
 
@@ -111,7 +125,10 @@ const Navbar = () => {
           )}
         </div>
       </div>
+<<<<<<< HEAD
       {/* {(active || pathname !== "/") && ( */}
+=======
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
         <>
           <hr />
           <div className='menuItems'>
@@ -145,9 +162,13 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
+<<<<<<< HEAD
           {/* <hr /> */}
         </>
        {/* )} */}
+=======
+        </>
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
     </div >
   )
 }

@@ -40,7 +40,11 @@ const Reviews = ({gigId}) => {
         ? "loading"
         : error
         ? "Something went wrong!"
+<<<<<<< HEAD
         : data.map((review) => <Review key={review._id} review={review} />)}
+=======
+        : data?.map((review) => <Review key={review._id} review={review} />)}
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
         <div className="add">
         <h3>Add a review</h3>
         <form action="" className="addForm" onSubmit={handleSubmit}>

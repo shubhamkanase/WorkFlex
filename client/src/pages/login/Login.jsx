@@ -4,9 +4,12 @@ import axios from "axios"
 import newRequest from '../../utils/newRequest'
 import { useNavigate} from 'react-router-dom'
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
 function Login() {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")

@@ -5,6 +5,14 @@ export const createGig = async (req, res, next) => {
   if (!req.isSeller)
     return next(createError(403, "Only sellers can create a gig!"));
 
+<<<<<<< HEAD
+=======
+  //   const { cat, /* other required fields */ } = req.body;
+  // if (!cat /* || !other fields */) {
+  //   return next(createError(400, "Required fields are missing!"));
+  // }
+
+>>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
   const newGig = new Gig({
     userId: req.userId,
     ...req.body,
