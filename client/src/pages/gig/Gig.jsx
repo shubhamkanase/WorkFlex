@@ -1,14 +1,14 @@
 import React from 'react'
 import "./Gig.scss"
 import { AccessTime, Check, Recycling, Star, ThumbDown, ThumbUp } from '@mui/icons-material'
-import { Slider } from 'infinite-react-carousel'
+import Slider from 'infinite-react-carousel'
 import { Link, useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import newRequest from '../../utils/newRequest'
 import Reviews from "../../components/reviews/Reviews";
 
 
-function Gig () {
+function Gig() {
   const { id } = useParams();
 
   const { isLoading, error, data } = useQuery({
@@ -69,11 +69,14 @@ function Gig () {
               </div>
             )}
 
-            <Slider slidesToShow={1} arrowsScroll={1} className="slider" >
-              {data.images.map((img) => (
-                <img key={img} src={img} alt='' />
-
-              ))}
+            <Slider slidesToShow={1} arrowsScroll={1} className="slider">
+              {Array.isArray(data.images) && data.images.length > 0 ? (
+                data.images.map((img, index) => (
+                  typeof img === 'string' && <img key={index} src={img} alt='' />
+                ))
+              ) : (
+                <p>No images available</p> // Placeholder or message when data.images is empty or undefined
+              )}
             </Slider>
 
             <h2>About This Gig</h2>
@@ -170,7 +173,7 @@ function Gig () {
               ))}
             </div>
             <Link to={`/pay/${id}`}>
-            <button>Continue</button>
+              <button>Continue</button>
             </Link>
           </div>
         </div>

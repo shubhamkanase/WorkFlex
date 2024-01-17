@@ -3,6 +3,8 @@ import upload from "../../utils/upload";
 import "./Register.scss";
 import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Register() {
   const [file, setFile] = useState(null);
@@ -34,11 +36,37 @@ function Register() {
 
     const url = await upload(file);
     try {
-      await newRequest.post("/auth/register", {
-        ...user,
-        img: url,
-      });
-      navigate("/")
+      if(user && url){
+        await newRequest.post("/auth/register", {
+          ...user,
+          img: url,
+        });
+        toast.success("User Register Successfully!", {
+          duration: 10000,
+          position: 'top-center',
+          icon: '👍',
+          style: {
+            border: '1px solid black',
+            padding: '16px',
+            borderRadius: '10px',
+            color: 'black',
+            backgroundColor: 'limegreen',
+            fontWeight: 600
+          },
+          iconTheme: {
+            fontSize: '20px',
+            primary: '#000',
+            secondary: '#fff',
+          },
+          ariaProps: {
+            role: 'status',
+            'aria-live': 'polite',
+          },
+        });
+        navigate("/")
+      }else{
+        toast.error("please feild the details")
+      }
     } catch (err) {
       console.log(err);
     }
@@ -74,6 +102,7 @@ function Register() {
             onChange={handleChange}
           />
           <button type="submit">Register</button>
+          <Toaster />
         </div>
         <div className="right">
           <h1>I want to become a seller</h1>

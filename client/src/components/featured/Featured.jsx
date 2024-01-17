@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Featured.scss"
 import { Home, SearchOutlined, SearchSharp } from '@mui/icons-material'
 import { Link, useNavigate } from "react-router-dom";
@@ -6,6 +6,17 @@ import { Link, useNavigate } from "react-router-dom";
 function Featured() {
     const [input, setInput] = useState("");
     const navigate = useNavigate();
+
+    const [currentWordIndex, setCurrentWordIndex] = useState(0);
+    const words = ['AI', 'Freelancing', 'Flexibility',"Community",'Opportunities','Accessibility']; // Words to cycle through
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+        }, 1500);
+
+        return () => clearInterval(interval);
+    }, [words.length]);
 
     const handleSubmit = () => {
         navigate(`/gigs?cat=${input}`);
@@ -43,8 +54,18 @@ function Featured() {
 
                     </div>
 
+                    <div id="dynamicText">
+                        <h1>Loved by Freelancers.</h1>
+                        <div className='flexText'>
+                            <h1>Build for</h1>
+                            <h3 id="changingText">
+                                {words[currentWordIndex]}
+                            </h3>
+                        </div>
+                    </div>
+
                 </div>
-                <div />
+                {/* <div /> */}
                 <div className="right">
                     {/* <img className='homepic2'src="./img/homeimg2.svg" alt="" /> */}
                     {/* <img className='homepic2' src="./img/homeimg3.svg" alt="" /> */}

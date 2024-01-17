@@ -14,16 +14,19 @@
             border-radius: 50%;
         }
 
-        .country {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: gray;
+        .info {
+            gap: 5px;
+            .country {
+                display: flex;
+                align-items: center;
+                color: rgb(58, 122, 251);
 
-            img {
-                width: 20px;
+                // img {
+                //     width: 20px;
+                // }
             }
         }
+
     }
 
     .stars {
