@@ -28,6 +28,10 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query';
 import WhyFlex from "./pages/whyFlex/WhyFlex";
+import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
+import Terms from "./pages/terms/Terms";
+import Trust from "./pages/trust/Trust";
+import Support from "./pages/support/Support";
 
 
 
@@ -108,6 +112,22 @@ function App() {
           path: "/success",
           element: <Success />,
         },
+        {
+          path: "/privacyPolicy",
+          element: <PrivacyPolicy/>
+        },
+        {
+          path: "/terms",
+          element: <Terms/>
+        },
+        {
+          path: "/trust",
+          element: <Trust/>
+        },
+        {
+          path: "/support",
+          element: <Support/>
+        }
       ]
 
     },
