@@ -65,7 +65,9 @@ const Footer = () => {
 
           <div className="item">
             <h2>Community</h2>
+            <Link className='link' to="https://github.com/">
             <span>Community Hub</span>
+            </Link>
             <Link className="link" to="/register">
               <span>Become a Seller</span>
             </Link>

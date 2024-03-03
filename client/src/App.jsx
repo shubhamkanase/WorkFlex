@@ -31,7 +31,7 @@ import WhyFlex from "./pages/whyFlex/WhyFlex";
 import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 import Terms from "./pages/terms/Terms";
 import Trust from "./pages/trust/Trust";
-import { Support } from "@mui/icons-material";
+import Support from "./pages/support/Support";
 
 
 
