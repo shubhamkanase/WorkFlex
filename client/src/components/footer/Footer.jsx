@@ -77,7 +77,6 @@ const Footer = () => {
             <Link className='links' to={`/gigs?cat=business`}>
               Business
             </Link>
-            <span>Community Standards</span>
           </div>
         </div>
         <hr />
