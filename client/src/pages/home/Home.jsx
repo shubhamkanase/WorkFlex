@@ -2,10 +2,6 @@ import React from 'react'
 import "./Home.scss"
 import Featured from '../../components/featured/Featured'
 import TrustedBy from '../../components/trustedBy/TrustedBy'
-<<<<<<< HEAD
-// import { Slide } from '@mui/material'
-=======
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
 import Slide from '../../components/Slide/Slide'
 import { cards } from "../../data"
 import CatCard from '../../components/catCard/CatCard'
@@ -30,10 +26,6 @@ const Home = () => {
           <div className="item">
             <h1> A whole world of freelancing talent at your fingertips</h1>
             <div className="title">
-<<<<<<< HEAD
-              {/* <img src="./img/checkicon.png" alt="" />*/}
-=======
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
               <CheckCircleOutline className='checkicon' sx={{ fontSize: 30 }} />
               The best for every budget
             </div>

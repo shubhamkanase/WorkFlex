@@ -52,11 +52,6 @@ const CheckoutForm = () => {
     e.preventDefault();
 
     if (!stripe || !elements) {
-<<<<<<< HEAD
-      // Stripe.js hasn't yet loaded.
-      // Make sure to disable form submission until Stripe.js has loaded.
-=======
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
       return;
     }
 
@@ -65,23 +60,11 @@ const CheckoutForm = () => {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-<<<<<<< HEAD
-        // Make sure to change this to your payment completion page
-=======
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
         return_url: "http://localhost:5173/success",
       },
     });
 
-<<<<<<< HEAD
-    // This point will only be reached if there is an immediate error when
-    // confirming the payment. Otherwise, your customer will be redirected to
-    // your `return_url`. For some payment methods like iDEAL, your customer will
-    // be redirected to an intermediate site first to authorize the payment, then
-    // redirected to the `return_url`.
-=======
     
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
     if (error.type === "card_error" || error.type === "validation_error") {
       setMessage(error.message);
     } else {
@@ -106,10 +89,6 @@ const CheckoutForm = () => {
           {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
         </span>
       </button>
-<<<<<<< HEAD
-      {/* Show any error or success messages */}
-=======
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
       {message && <div id="payment-message">{message}</div>}
     </form>
   );

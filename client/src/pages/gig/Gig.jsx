@@ -1,22 +1,14 @@
 import React from 'react'
 import "./Gig.scss"
 import { AccessTime, Check, Recycling, Star, ThumbDown, ThumbUp } from '@mui/icons-material'
-<<<<<<< HEAD
-import { Slider } from 'infinite-react-carousel'
-=======
 import Slider from 'infinite-react-carousel'
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
 import { Link, useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import newRequest from '../../utils/newRequest'
 import Reviews from "../../components/reviews/Reviews";
 
 
-<<<<<<< HEAD
-function Gig () {
-=======
 function Gig() {
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
   const { id } = useParams();
 
   const { isLoading, error, data } = useQuery({
@@ -69,10 +61,6 @@ function Gig() {
                     {Array(Math.round(data.totalStars / data.starNumber))
                       .fill()
                       .map((item, i) => (
-<<<<<<< HEAD
-                        // <img src="/img/star.png" alt="" key={i} />
-=======
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
                         <Star fontSize='medium' className='staricon' key={i} />
                       ))}
                     <span>{Math.round(data.totalStars / data.starNumber)}</span>
@@ -81,13 +69,6 @@ function Gig() {
               </div>
             )}
 
-<<<<<<< HEAD
-            <Slider slidesToShow={1} arrowsScroll={1} className="slider" >
-              {data.images.map((img) => (
-                <img key={img} src={img} alt='' />
-
-              ))}
-=======
             <Slider slidesToShow={1} arrowsScroll={1} className="slider">
               {Array.isArray(data.images) && data.images.length > 0 ? (
                 data.images.map((img, index) => (
@@ -96,7 +77,6 @@ function Gig() {
               ) : (
                 <p>No images available</p> // Placeholder or message when data.images is empty or undefined
               )}
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
             </Slider>
 
             <h2>About This Gig</h2>
@@ -121,10 +101,6 @@ function Gig() {
                         {Array(Math.round(data.totalStars / data.starNumber))
                           .fill()
                           .map((item, i) => (
-<<<<<<< HEAD
-                            //<img src="/img/star.png" alt="" key={i} />
-=======
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
                             <Star className='staricon' key={i} />
                           ))}
                         <span>
@@ -197,11 +173,7 @@ function Gig() {
               ))}
             </div>
             <Link to={`/pay/${id}`}>
-<<<<<<< HEAD
-            <button>Continue</button>
-=======
               <button>Continue</button>
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
             </Link>
           </div>
         </div>

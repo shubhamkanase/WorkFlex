@@ -5,22 +5,12 @@ import Stripe from "stripe";
 
 export const intent = async (req, res, next) => {
   const stripe = new Stripe('sk_test_51OAvYMSGEHXrqh5rV4QOndOOTLbAUiE8CZ5P66KznLHlzgCTrDJEdfFiaLcodU5GgZVbVhZjQ6QpAEKk6YsCRlE100ly4WyzW2');
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
   const gig = await Gig.findById(req.params.id);
 
   const paymentIntent = await stripe.paymentIntents.create({
     amount: gig.price * 100,
     currency: "inr",
     description: 'Software development services',
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
     automatic_payment_methods: {
       enabled: true,
     },
@@ -37,26 +27,13 @@ export const intent = async (req, res, next) => {
   await newOrder.save()
   res.status(200).send({
     clientSecret: paymentIntent.client_secret,
-<<<<<<< HEAD
-  });  
-=======
   });
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
 }
 
 
 export const getOrders = async (req, res, next) => {
   try {
     const orders = await Order.find({
-<<<<<<< HEAD
-      ...(req.isSeller ? { sellerId: req.userId } : { buyerId: req.userId }),
-      isCompleted: true,
-    });
-
-    res.status(200).send(orders);
-
-  } catch (err) {
-=======
       // ...(req.isSeller ? { sellerId: req.userId } : { buyerId: req.userId }),
       ...({ buyerId: req.userId }),
       isCompleted: true,
@@ -64,7 +41,6 @@ export const getOrders = async (req, res, next) => {
     res.status(200).send(orders);
   } catch (err) {
     console.log(err)
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
     next(err);
   }
 };
@@ -86,9 +62,6 @@ export const confirm = async (req, res, next) => {
   } catch (err) {
     next(err);
   }
-<<<<<<< HEAD
-};
-=======
 };
 
 export const deleteOrder = async (req, res, next) => {
@@ -108,4 +81,3 @@ export const deleteOrder = async (req, res, next) => {
     next(err);
   }
 };
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
