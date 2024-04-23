@@ -27,9 +27,9 @@ const connect = async () => {
 
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://master--workflexx.netlify.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, 
+  credentials: true,
 }));
 
 app.use(express.json());
@@ -43,7 +43,7 @@ app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
 app.use("/api/reviews", reviewRoute);
 
-app.use((err, req, res, next) =>{
+app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
   const errorMessage = err.Message || "something went wrong!";
 
