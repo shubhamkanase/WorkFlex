@@ -1,10 +1,6 @@
 {
   "name": "api",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "",
-=======
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -23,13 +19,8 @@
     "mongodb": "^6.0.0",
     "mongoose": "^7.5.0",
     "nodemon": "^3.0.1",
-<<<<<<< HEAD
-    "stripe": "^14.4.0"
-  }
-=======
     "stripe": "^14.4.0",
     "uuid": "^9.0.1"
   },
   "description": ""
->>>>>>> 494744736fccee31f0401ce2d804d18c4b4e1da7
 }
