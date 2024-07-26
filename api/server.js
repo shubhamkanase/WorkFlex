@@ -25,9 +25,10 @@ const connect = async () => {
   }
 }
 
-
+// const production = 'https://workflexx.netlify.app';
+// const localhost = 'http://localhost:5173/'
 app.use(cors({
-  origin: 'https://master--workflexx.netlify.app',
+  origin: 'https://workflexx.netlify.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
